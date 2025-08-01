@@ -1,22 +1,36 @@
 import streamlit as st
+import json
+import os
 
-# Initialize session state
+# Function to save tasks to file
+def save_tasks():
+    with open("tasks_streamlit.json", "w") as f:
+        json.dump(st.session_state.tasks, f)
+
+# Load tasks from file only once
 if "tasks" not in st.session_state:
-    st.session_state.tasks = []
+    if os.path.exists("tasks_streamlit.json"):
+        with open("tasks_streamlit.json", "r") as f:
+            st.session_state.tasks = json.load(f)
+    else:
+        st.session_state.tasks = []
 
 # Function to add a new task
 def add_task():
     if st.session_state.new_task:
         st.session_state.tasks.append({"task": st.session_state.new_task, "done": False})
         st.session_state.new_task = ""  # Clear input
+        save_tasks()
 
 # Function to mark a task as done
 def mark_done(index):
     st.session_state.tasks[index]["done"] = True
+    save_tasks()
 
 # Function to delete a task
 def delete_task(index):
     st.session_state.tasks.pop(index)
+    save_tasks()
 
 # Page layout
 st.set_page_config(page_title="To-Do App", layout="centered")
