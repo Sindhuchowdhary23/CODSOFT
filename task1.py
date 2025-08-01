@@ -1,4 +1,13 @@
-tasks = []
+import json
+import os
+
+# Load tasks from file
+if os.path.exists("tasks.json"):
+    with open("tasks.json", "r") as f:
+        tasks = json.load(f)
+else:
+    tasks = []
+
 # Function to show the menu
 def show_menu():
     print("\n--- To-Do List ---")
@@ -57,10 +66,9 @@ while True:
     elif choice == "4":
         delete_task()
     elif choice == "5":
-        print("Goodbye!")
+        with open("tasks.json", "w") as f:
+            json.dump(tasks, f)
+        print("Tasks saved. Goodbye!")
         break
     else:
         print("Please enter a number from 1 to 5.")
-
-
-    
