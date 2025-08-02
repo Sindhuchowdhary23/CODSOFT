@@ -1,24 +1,21 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/Sindhuchowdhary23/todo-cli-app/main/docs/logo.png" alt="To-Do CLI Logo" width="200"/>
 </p>
-
 <h1 align="center">📝 To-Do List Application</h1>
-
 <p align="center">
   <strong>A versatile task management solution with both Command-Line and Web interfaces - Choose your preferred way to manage tasks!</strong>
   <br />
   <br />
   <a href="#-getting-started"><strong>🚀 Get Started</strong></a>
   ·
-  <a href="https://github.com/Sindhuchowdhary23/todo-cli-app/issues"><strong>🐛 Report a Bug</strong></a>
+  <a href="https://github.com/Sindhuchowdhary23/CODSOFT/issues"><strong>🐛 Report a Bug</strong></a>
   ·
-  <a href="https://github.com/Sindhuchowdhary23/todo-cli-app/issues"><strong>✨ Request a Feature</strong></a>
+  <a href="https://github.com/Sindhuchowdhary23/CODSOFT/issues"><strong>✨ Request a Feature</strong></a>
 </p>
-
 <p align="center">
-  <a href="https://github.com/Sindhuchowdhary23/todo-cli-app/stargazers"><img src="https://img.shields.io/github/stars/Sindhuchowdhary23/todo-cli-app?style=for-the-badge&logo=github&color=FFDD00" alt="Stars"></a>
-  <a href="https://github.com/Sindhuchowdhary23/todo-cli-app/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Sindhuchowdhary23/todo-cli-app?style=for-the-badge&color=00BFFF" alt="License"></a>
-  <a href="https://github.com/Sindhuchowdhary23/todo-cli-app/network/members"><img src="https://img.shields.io/github/forks/Sindhuchowdhary23/todo-cli-app?style=for-the-badge&logo=github&color=90EE90" alt="Forks"></a>
+  <a href="https://github.com/Sindhuchowdhary23/CODSOFT/stargazers"><img src="https://img.shields.io/github/stars/Sindhuchowdhary23/CODSOFT?style=for-the-badge&logo=github&color=FFDD00" alt="Stars"></a>
+  <a href="https://github.com/Sindhuchowdhary23/CODSOFT/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Sindhuchowdhary23/CODSOFT?style=for-the-badge&color=00BFFF" alt="License"></a>
+  <a href="https://github.com/Sindhuchowdhary23/CODSOFT/network/members"><img src="https://img.shields.io/github/forks/Sindhuchowdhary23/CODSOFT?style=for-the-badge&logo=github&color=90EE90" alt="Forks"></a>
 </p>
 
 ---
@@ -123,7 +120,7 @@ Choose an option (1-5): 2
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/Sindhuchowdhary23/todo-cli-app.git
+   git clone https://github.com/Sindhuchowdhary23/CODSOFT.git
    cd todo-cli-app
    ```
 
@@ -210,8 +207,8 @@ We welcome contributions from developers of all skill levels! Whether you prefer
 
 Thanks to these amazing people who have contributed to this project:
 
-<a href="https://github.com/Sindhuchowdhary23/todo-cli-app/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Sindhuchowdhary23/todo-cli-app" />
+<a href="https://github.com/Sindhuchowdhary23/CODSOFT/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Sindhuchowdhary23/CODSOFT" />
 </a>
 
 ---
@@ -241,9 +238,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-  
   <p><strong>⭐ If you found this helpful, please consider giving it a star on GitHub!</strong></p>
   <p>Every star motivates us to keep building and improving. 😊</p>
-  
-  <img src="https://komarev.com/ghpvc/?username=Sindhuchowdhary23-todo-cli-app&label=Project%20Views&color=00BFFF&style=flat" alt="Project views" />
+  <img src="https://komarev.com/ghpvc/?username=Sindhuchowdhary23-CODSOFT&label=Project%20Views&color=00BFFF&style=flat" alt="Project views" />
 </div>
