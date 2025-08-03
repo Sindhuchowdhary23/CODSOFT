@@ -1,150 +1,244 @@
-# 📝 To-Do List CLI App
-
-A simple yet powerful **Command-Line To-Do List** application built using Python.  
-Manage your daily tasks efficiently — right from your terminal, no distractions, no bloat.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Sindhuchowdhary23/todo-cli-app/main/docs/logo.png" alt="To-Do CLI Logo" width="200"/>
+</p>
+<h1 align="center">📝 To-Do List Application</h1>
+<p align="center">
+  <strong>A versatile task management solution with both Command-Line and Web interfaces - Choose your preferred way to manage tasks!</strong>
+  <br />
+  <br />
+  <a href="#-getting-started"><strong>🚀 Get Started</strong></a>
+  ·
+  <a href="https://github.com/Sindhuchowdhary23/CODSOFT/issues"><strong>🐛 Report a Bug</strong></a>
+  ·
+  <a href="https://github.com/Sindhuchowdhary23/CODSOFT/issues"><strong>✨ Request a Feature</strong></a>
+</p>
+<p align="center">
+  <a href="https://github.com/Sindhuchowdhary23/CODSOFT/stargazers"><img src="https://img.shields.io/github/stars/Sindhuchowdhary23/CODSOFT?style=for-the-badge&logo=github&color=FFDD00" alt="Stars"></a>
+  <a href="https://github.com/Sindhuchowdhary23/CODSOFT/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Sindhuchowdhary23/CODSOFT?style=for-the-badge&color=00BFFF" alt="License"></a>
+  <a href="https://github.com/Sindhuchowdhary23/CODSOFT/network/members"><img src="https://img.shields.io/github/forks/Sindhuchowdhary23/CODSOFT?style=for-the-badge&logo=github&color=90EE90" alt="Forks"></a>
+</p>
 
 ---
 
 ## 📌 Table of Contents
 
-- [About the Project](#📋about-the-project)  
-- [Features](#✨features)  
-- [Tech Stack](#🛠️tech-stack)  
-- [Requirements](#📅requirements)  
-- [Usage Instructions](#🚀usage-instructions)  
-- [Example Output](#📚example-output)  
-- [Folder Structure](#📂folder-structure)  
-- [Contributing](#🤝contributing)  
-- [Credits](#🙌credit)
+- [🌟 About the Project](#-about-the-project)
+- [🔥 Core Features](#-core-features)
+- [🎬 Interface Previews](#-interface-previews)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [🚀 Getting Started](#-getting-started)
+- [💡 Usage Guide](#-usage-guide)
+- [🤝 Contributing](#-contributing)
+- [🌟 Contributors](#-contributors)
+- [📜 Code of Conduct](#-code-of-conduct)
+- [📜 License](#-license)
+- [🙌 Credits](#-credits)
 
 ---
 
-## 📋About the Project
+## 🌟 About the Project
 
-This lightweight CLI app was created to help users manage to-dos in a fast, minimal, and distraction-free environment.  
-Perfect for developers, students, or anyone who prefers the terminal over a GUI.
+This project provides **two different interfaces** for managing your to-do tasks - giving you the flexibility to choose based on your preference and workflow:
 
----
+- **📟 Command-Line Interface (CLI):** Perfect for terminal enthusiasts and developers who prefer keyboard-driven interfaces
+- **🌐 Web Interface:** Modern, clean Streamlit-based web application for users who prefer graphical interfaces
 
-## ✨Features
+Both versions offer the same core functionality with their own unique advantages, making task management accessible to everyone regardless of their preferred working environment.
 
-- ➕ Add new tasks  
-- 👀 View all tasks with status (Pending / Done)  
-- ✅ Mark tasks as done  
-- 🗑️ Delete specific tasks  
-- 💡 Simple and user-friendly CLI interface  
-- 💾 (Optional) Add file-based storage to make tasks persistent
+### 🔥 Core Features
 
----
-
-## 🛠️Tech Stack
-
-| Area       | Technology           |
-|------------|-----------------------|
-| Language   | Python 3              |
-| Libraries  | Python Standard Library only |
-| Interface  | Command-Line (Terminal) |
+*   **✅ Complete Task Management:** Add, view, mark complete, and delete tasks
+*   **🎯 Status Tracking:** Clear visual distinction between pending and completed tasks  
+*   **🚀 Dual Interface Options:** Choose between CLI or Web interface
+*   **💻 Zero External Dependencies:** CLI version uses only Python standard library
+*   **🎨 Clean User Experience:** Intuitive interfaces in both versions
+*   **⚡ Lightweight & Fast:** Minimal resource usage for maximum efficiency
 
 ---
 
-## 📅Requirements
+## 🎬 Interface Previews
 
-- Python 3.x installed on your system  
-- No external dependencies or libraries
-
----
-
-## 🚀Usage Instructions
-
-1. **Clone the repository** or copy the code into a file named `todo.py`:
-
+### Command-Line Interface (task1.py)
 ```bash
-git clone https://github.com/your-username/todo-cli-app.git
-cd todo-cli-app
-```
-
-2. **Run the script**:
-
-```bash
-python todo.py
-```
-
-3. **Follow the menu** to manage your tasks.
-
----
-
-## 📚Example Output
-
-```
 --- To-Do List ---
 1. Add Task
 2. View Tasks
 3. Mark Task as Done
 4. Delete Task
 5. Exit
-Choose an option (1-5): 
+Choose an option (1-5): 2
+
+1. Complete GSSoC Registration - Not Done
+2. Review Pull Requests - Done
+3. Buy groceries - Not Done
 ```
 
-Sample Task View:
-```
---- Your Tasks ---
-[1] Complete GSSoC Registration     [Pending]
-[2] Review Pull Requests            [Done]
-[3] Buy Milk                        [Pending]
-```
+### Web Interface (todoUI.py)
+- Modern Streamlit interface with interactive buttons
+- Real-time task status updates
+- Clean card-based task display
+- One-click task completion and deletion
 
 ---
 
-## 📂Folder Structure
+## 🛠️ Tech Stack
 
-```
-todo-cli-app/
-├── todo.py
-├── README.md
-└── LICENSE (optional)
-```
+| Component           | CLI Version              | Web Version                |
+| ------------------- | ------------------------ | -------------------------- |
+| **Core Language**   | Python 3.x               | Python 3.x                 |
+| **Interface**       | Terminal/Command Line     | Streamlit Web Framework    |
+| **Dependencies**    | None (Standard Library)   | Streamlit                  |
+| **Storage**         | In-memory (session-based) | Streamlit session state    |
 
----
+<details>
+  <summary><strong>Project Structure</strong></summary>
 
-## 🤝Contributing
-
-We welcome all contributions to improve the project!
-
-### ✅ How to Contribute:
-
-1. **Fork** the repository  
-2. **Create a new branch**  
-3. **Make your changes**  
-4. **Commit and push**  
-5. **Open a Pull Request**
-
-### 🧾 Contribution Guidelines:
-
-- Follow Python coding standards (PEP 8)  
-- Use meaningful commit messages  
-- Add comments to your code where needed  
-- Test your changes before submitting  
-- Be respectful and collaborative
+  ```
+  todo-cli-app/
+  ├── task1.py              # CLI version - Terminal interface
+  ├── todoUI.py             # Web version - Streamlit interface  
+  ├── README.md             # Project documentation
+  ├── LICENSE               # MIT License
+  └── CODE_OF_CONDUCT.md    # Community guidelines
+  ```
+</details>
 
 ---
 
-## 🙌Credit 
+## 🚀 Getting Started
 
-Developed  by **Sindhu chowdhary**  
- 
-🔗 [GitHub](https://github.com/Sindhuchowdhary23)
+### Prerequisites
 
+**For CLI Version:**
+- Python 3.x installed on your system
 
+**For Web Version:**
+- Python 3.x installed on your system
+- Streamlit library
 
-> Thank you to all open-source contributors for making this better, line by line! 🚀
-We welcome you all to contribute in this project
+### Installation & Setup
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Sindhuchowdhary23/CODSOFT.git
+   cd todo-cli-app
+   ```
+
+2. **Choose Your Interface:**
+
+   **Option A: Command-Line Interface**
+   ```bash
+   python task1.py
+   ```
+
+   **Option B: Web Interface**
+   ```bash
+   # Install Streamlit (one-time setup)
+   pip install streamlit
+   
+   # Run the web app
+   streamlit run todoUI.py
+   ```
+
+3. **🎉 Start Managing Your Tasks!**
+   - CLI: Follow the numbered menu options
+   - Web: Access via your browser (typically http://localhost:8501)
 
 ---
 
-## ⭐ Final Note
+## 💡 Usage Guide
 
-If you found this helpful, please consider giving a ⭐ on GitHub.  
-Every star motivates us to keep building and improving. 😊
+### CLI Version Features
+- **Menu-driven interface:** Simple numbered options for all operations
+- **Keyboard-only operation:** Perfect for terminal workflows
+- **Immediate feedback:** Instant confirmation of all actions
+- **Session-based:** Tasks persist during the program session
 
+### Web Version Features  
+- **Interactive buttons:** Click-based task management
+- **Real-time updates:** Immediate visual feedback
+- **Session persistence:** Tasks saved during browser session
+- **Modern UI:** Clean, card-based task display
 
+### Common Operations
+1. **Adding Tasks:** Enter descriptive task names
+2. **Viewing Tasks:** See all tasks with their current status
+3. **Completing Tasks:** Mark tasks as done when finished
+4. **Deleting Tasks:** Remove tasks you no longer need
 
+---
+
+## 🤝 Contributing
+
+We welcome contributions from developers of all skill levels! Whether you prefer working with CLI applications or web interfaces, there's something for everyone.
+
+### 🌟 How to Contribute
+
+1. **🍴 Fork the Repository**
+2. **🌿 Create a Feature Branch:** `git checkout -b feature/amazing-feature`
+3. **✨ Make Your Changes**
+4. **✅ Test Both Interfaces**
+5. **📝 Commit Your Changes:** `git commit -m 'Add amazing feature'`
+6. **🚀 Push to Branch:** `git push origin feature/amazing-feature`
+7. **🎯 Open a Pull Request**
+
+### 📋 Contribution Ideas
+
+- **🎨 Enhanced CLI:** Add colors and better formatting to terminal interface
+- **💾 Persistent Storage:** Implement file-based task storage for both versions
+- **🔍 Search Functionality:** Add task search and filtering
+- **📅 Due Dates:** Implement deadline tracking
+- **🏷️ Categories:** Add task categorization
+- **📱 Mobile Optimization:** Improve Streamlit mobile experience
+- **🔄 Data Import/Export:** Support for various file formats
+
+### 🧾 Development Guidelines
+
+- Follow **PEP 8** Python style guidelines
+- Test changes in **both CLI and web versions**
+- Write **clear commit messages**
+- Add **comments** for complex logic
+- Update **documentation** as needed
+- Be **respectful and collaborative**
+
+---
+
+## 🌟 Contributors
+
+Thanks to these amazing people who have contributed to this project:
+
+<a href="https://github.com/Sindhuchowdhary23/CODSOFT/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Sindhuchowdhary23/CODSOFT" />
+</a>
+
+---
+
+## 📜 Code of Conduct
+
+We are committed to providing a welcoming and inclusive environment for all contributors. Please read our [Code of Conduct](CODE_OF_CONDUCT.md) to understand our community standards.
+
+In short: **Be respectful, be kind, and be collaborative.**
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙌 Credits
+
+**Developed by [Sindhu Chowdhary](https://github.com/Sindhuchowdhary23)**
+
+> Thank you to all open-source contributors for making this project better! 🚀  
+> We welcome developers of all skill levels to contribute and learn together.
+
+---
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+  <p><strong>⭐ If you found this helpful, please consider giving it a star on GitHub!</strong></p>
+  <p>Every star motivates us to keep building and improving. 😊</p>
+  <img src="https://komarev.com/ghpvc/?username=Sindhuchowdhary23-CODSOFT&label=Project%20Views&color=00BFFF&style=flat" alt="Project views" />
+</div>
