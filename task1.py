@@ -1,12 +1,25 @@
-tasks = []
+import json
+import os
+
+
+def load_tasks():
+    if os.path.exits(Task_FILE):
+        with open(Task_FILE, "r") as file:
+            return json.load(file)
+def task_save():
+    with open(Task_FILE, "w") as file:
+        json.dump(tasks, file, indent=4)
+        
+tasks = load_tasks()
+Task_FILE = "Task.json"
 # Function to show the menu
 def show_menu():
     print("\n--- To-Do List ---")
-    print("1. Add Task")
-    print("2. View Tasks")
-    print("3. Mark Task as Done")
-    print("4. Delete Task")
-    print("5. Exit")
+    print("1️⃣  ➕ Add  a Task")
+    print("2️⃣  📋 View Tasks")
+    print("3️⃣  ✅ Mark Task as Done")
+    print("4️⃣  🗑️  Delete Task")
+    print("5️⃣  🚪 Exit")
 
 # Function to add a new task
 def add_task():
@@ -20,7 +33,7 @@ def view_tasks():
         print("No tasks found.")
     else:
         for i, task in enumerate(tasks, start=1):
-            status = "Done" if task["done"] else "Not Done"
+            status = "✅ Done" if task["done"] else "❌ Not Done"
             print(f"{i}. {task['task']} - {status}")
 
 # Function to mark a task as done
