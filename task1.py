@@ -1,3 +1,4 @@
+import datetime
 tasks = []
 # Function to show the menu
 def show_menu():
@@ -11,6 +12,12 @@ def show_menu():
 # Function to add a new task
 def add_task():
     task = input("Enter a new task: ")
+    due = input("Enter due date (YYYY-MM-DD) or leave blank: ").strip()
+    try:
+        due_date = datetime.datetime.strptime(due, "%Y-%m-%d").date() if due else None
+    except ValueError:
+        print("Invalid date format. Skipping due date.")
+        due_date = None
     tasks.append({"task": task, "done": False})
     print("Task added!")
 
@@ -21,7 +28,8 @@ def view_tasks():
     else:
         for i, task in enumerate(tasks, start=1):
             status = "Done" if task["done"] else "Not Done"
-            print(f"{i}. {task['task']} - {status}")
+            due = f" | Due: {task['due']}" if task.get("due") else ""
+            print(f"{i}. {task['task']} - {status}{due}")
 
 # Function to mark a task as done
 def mark_done():
